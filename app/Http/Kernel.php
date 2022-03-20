@@ -46,7 +46,7 @@ class Kernel extends HttpKernel
         ],
     ];
 
-    /**
+    /**s
      * The application's route middleware.
      *
      * These middleware may be assigned to groups or used individually.
@@ -63,5 +63,10 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'routes.localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
+        'redirect.localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
+        'session.localize' => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
+        'cookie.localize' => \Mcamara\LaravelLocalization\Middleware\LocaleCookieRedirect::class,
+        'view.localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class
     ];
 }
