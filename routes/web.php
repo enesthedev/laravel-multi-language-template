@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization as Localization;
+use \App\Helpers\LocalizationHelper;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::prefix(Localization::setLocale())
+    ->middleware(LocalizationHelper::getLocalizationMiddlewares())
+    ->group(function () {
+        Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'index'])
+            ->name('welcome');
+    });
