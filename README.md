@@ -8,5 +8,15 @@ The Laravel Mult-Language Template has latest version of Laravel and @mcamara/la
 - Example Multi-Language route in web.php
 - Shows app current language in welcome view beside of PHP version.
 
+## Install Instructions
+Go to the project folder and copy .env.example as .env after that step same as generic Laravel Installation. You can find list of commands you need to execute below.
+
+```bash
+cd project-name
+cp .env.example .env
+php artisan key:generate
+php artisan optimize:clear
+```
+
 ## Test
 If you want to see localizated routes please visit app.test/es app.test/en.
