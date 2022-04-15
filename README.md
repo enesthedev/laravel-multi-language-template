@@ -1,6 +1,9 @@
-# Laravel Multi-Language Template
+<div align="left">
+	<h2>Laravel Mutli-Language Template</h2>
+	<hr />
+</div>
 
-The Laravel Mult-Language Template has latest version of Laravel and @mcamara/laravel-localization with specific classes, futures.
+The Laravel Multi-Language Template has latest version of Laravel and @mcamara/laravel-localization with specific classes, futures.
 
 ## Specifications
 - Built-in Helpers directory for helper classes.
