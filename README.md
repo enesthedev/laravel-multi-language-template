@@ -9,8 +9,8 @@
 
 #### Specifications
 - Built-in Helpers directory for helper classes.
-- LocalizationHelper for list middleware of Localization
-- Example Multi-Language route in web.php
+- LocalizationHelper for list middleware of Localization.
+- Example Multi-Language route in web.php.
 - Shows app current language in welcome view beside of PHP version.
 
 #### Install Instructions
